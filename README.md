@@ -2,7 +2,7 @@
 
 ## Giới thiệu
 
-Đây là bài tập mô phỏng quá trình **mã hóa và khôi phục tín hiệu âm thanh** bằng phương pháp **Delta Modulation (DM)** trong MATLAB.
+Đây là bài tập mô phỏng quá trình **mã hóa** và **khôi phục tín hiệu âm thanh** bằng phương pháp **Delta Modulation (DM)** trong MATLAB.
 
 Chương trình thực hiện các bước chính:
 
@@ -11,7 +11,7 @@ Chương trình thực hiện các bước chính:
 - Ghi âm với độ phân giải **8 bit / mẫu**
 - Mã hóa tín hiệu theo phương pháp **Delta Modulation**
 - Biểu diễn mỗi mẫu bằng **1 bit**
-- Lưu bitstream vào file `.mat`
+- Lưu chuỗi bit sau mã hóa vào file `.mat`
 - Giải mã lại tín hiệu từ bitstream
 - Xuất tín hiệu phục hồi thành file `.wav`
 
@@ -24,6 +24,7 @@ Mục tiêu của bài là minh họa nguyên lý hoạt động cơ bản của
 Bài toán gồm 2 phần chính:
 
 ### 1. Mã hóa tín hiệu âm thanh
+
 Từ tín hiệu âm thanh đầu vào, chương trình sẽ:
 
 - so sánh giá trị mẫu hiện tại với giá trị tái tạo trước đó
@@ -33,6 +34,7 @@ Từ tín hiệu âm thanh đầu vào, chương trình sẽ:
 Kết quả là mỗi mẫu âm thanh chỉ được biểu diễn bằng **1 bit**.
 
 ### 2. Khôi phục tín hiệu
+
 Từ chuỗi bit đã mã hóa, chương trình:
 
 - cộng thêm `delta` nếu gặp bit `1`
@@ -52,23 +54,24 @@ Từ đó tái tạo lại tín hiệu gần đúng với tín hiệu gốc và 
   - `movmean`
   - `audiowrite`
 
-Không yêu cầu toolbox nâng cao cho phiên bản bài làm cơ bản này.
+Phiên bản bài làm cơ bản này không yêu cầu toolbox nâng cao.
 
 ---
 
-## Cấu trúc thư mục đề xuất
+## Cấu trúc thư mục
 
 ```text
 .
 ├── assets/
 │   └── images/
-│       ├── sample-run.png
-│       └── result-plot.png
-├── dm_audio_assignment.m
+│       ├── matlab-result.png
+│       └── sample-run.png
 ├── dm_encoded.mat
 ├── dm_reconstructed.wav
-└── README.md
+├── README.md
+└── untitled.m
 
+```
 
 ## Kết quả minh họa
 
