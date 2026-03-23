@@ -69,16 +69,13 @@ Không yêu cầu toolbox nâng cao cho phiên bản bài làm cơ bản này.
 ├── dm_reconstructed.wav
 └── README.md
 
+
 ## Kết quả minh họa
 
 ### 1. Một lần chạy mẫu trong MATLAB
 
-<p align="center">
-  <img src="assets/images/sample-run.png" alt="Một lần chạy mẫu trong MATLAB" width="900">
-</p>
+![Một lần chạy mẫu trong MATLAB](assets/images/sample-run.png)
 
 ### 2. Kết quả đồ thị sau khi mã hóa và khôi phục
 
-<p align="center">
-  <img src="assets/images/matlab-result.png" alt="Kết quả mã hóa và khôi phục" width="900">
-</p>
+![Kết quả mã hóa và khôi phục](assets/images/matlab-result.png)
